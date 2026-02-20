@@ -20,7 +20,7 @@ import { verifyCSRFToken } from "../config/csrfMiddleware.js";
 
 const router = express.Router();
 
-
+// Public Routes
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 router.post("/verify/:token", verifyUser);
